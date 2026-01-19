@@ -1,0 +1,9 @@
+version: "3.9"
+
+services:
+  e-transcriber:
+    build: .
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./models:/app/models
